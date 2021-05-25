@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/myfile"
+      ],
+      "url": "schemaURL"
+    }
+  ],
+  "files.exclude": {
+    "src/TestClassFolder/TestClass.class": true,
+    "src/App.class": true,
+    "src/TestClassFolder/**.class": true,
+    "src/TestClassFolder/Point.class": true
+  }
+}
