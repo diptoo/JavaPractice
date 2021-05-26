@@ -21,6 +21,6 @@ public class CurrentAccount extends Account {
 
     @Override
     public String toString() {
-        return super.toString() + "limit below zero";
+        return super.toString() + " limit below zero";
     }
 }
