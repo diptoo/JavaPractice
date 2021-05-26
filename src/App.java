@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         
-        Account[] accounts = new Account[2];
+        Account[] accounts = new Account[2];//array declare
 
         accounts[0] = new SavingAccount(1, 10.0, new Client(1, "c1", "123"), 60000);
         accounts[1] = new CurrentAccount(2, 20, new Client(2, "C2", "345"), 45000);
