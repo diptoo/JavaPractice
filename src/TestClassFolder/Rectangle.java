@@ -11,7 +11,7 @@
 
 package TestClassFolder;
 
-public class Rectangle extends GeoObject {
+public abstract class Rectangle extends GeoObject {
     private double width;
     private double height;
 
@@ -37,6 +37,7 @@ public class Rectangle extends GeoObject {
         this.height = height;
     }
 
+    @Override
     public double getArea()
     {
         return width * height;

@@ -1,18 +1,20 @@
 package TestClassFolder;
 
-public class GeoObject {
+public abstract class GeoObject { //italic means abstract
     private boolean isFilled;
     private String color;
 
-    public GeoObject() {
+    // # means protected in uml diagram 
+    protected GeoObject() { //Protected because the class is abstract. So instance won't be created. But can be inherited by sub class
         
     }
 
-    public GeoObject(boolean isFilled, String color) {
+    protected GeoObject(boolean isFilled, String color) {
         this.isFilled = isFilled;
         this.color = color;
     }
 
+    public abstract double getArea();
 
     public boolean isIsFilled() {
         return this.isFilled;
