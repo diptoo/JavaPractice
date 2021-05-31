@@ -8,15 +8,11 @@ import TestClassFolder.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        GeoObject obj = new GeoObject(){ // anonymous inner class
-            @Override
-            public double getArea() {
-                // TODO Auto-generated method stub
-                return 0;
-            }
-        };
+        Drawable rectangle = new Rectangle();
+        Drawable circle = new Circle();
 
-        System.out.println(obj.getArea());
+        rectangle.draw();
+        circle.draw();
     }
 }
 

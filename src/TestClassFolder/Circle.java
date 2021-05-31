@@ -1,6 +1,6 @@
 package TestClassFolder;
 
- public class Circle {
+ public class Circle extends GeoObject implements Drawable {
     Point center;
     double radius;
 
@@ -20,7 +20,8 @@ package TestClassFolder;
         return 2 * Math.PI * radius;
     }
 
-    double getArea()
+    @Override
+    public double getArea()
     {
         return Math.PI * radius * radius;
     }
@@ -33,5 +34,11 @@ package TestClassFolder;
     void setRadius(double radius)
     {
         this.radius = radius;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Drawing circle");
+
     }
 }

@@ -11,7 +11,7 @@
 
 package TestClassFolder;
 
-public abstract class Rectangle extends GeoObject {
+public class Rectangle extends GeoObject implements Drawable {
     private double width;
     private double height;
 
@@ -62,6 +62,12 @@ public abstract class Rectangle extends GeoObject {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Drawing rectangle");
+
     }
 
 }
