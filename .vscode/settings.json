@@ -12,5 +12,11 @@
     "src/App.class": true,
     "src/TestClassFolder/**.class": true,
     "src/TestClassFolder/Point.class": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+  },
+  "[json]": {
+  
   }
 }
